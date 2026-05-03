@@ -1,0 +1,39 @@
+{
+  "inputs": [
+    {
+      "id": "jira_site",
+      "type": "promptString",
+      "description": "Jira site subdomain (the part before .atlassian.net)"
+    },
+    {
+      "id": "jira_email",
+      "type": "promptString",
+      "description": "Atlassian account email"
+    },
+    {
+      "id": "jira_api_token",
+      "type": "promptString",
+      "description": "Jira API token (https://id.atlassian.com/manage-profile/security/api-tokens)",
+      "password": true
+    }
+  ],
+  "servers": {
+    "jira": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "${workspaceFolder}",
+        "run",
+        "python",
+        "-m",
+        "jira_mcp"
+      ],
+      "env": {
+        "JIRA_SITE": "${input:jira_site}",
+        "JIRA_EMAIL": "${input:jira_email}",
+        "JIRA_API_TOKEN": "${input:jira_api_token}"
+      }
+    }
+  }
+}
