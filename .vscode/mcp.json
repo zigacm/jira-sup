@@ -20,7 +20,7 @@
   "servers": {
     "jira": {
       "type": "stdio",
-      "command": "uv",
+      "command": "/Users/ziga/.local/bin/uv",
       "args": [
         "--directory",
         "${workspaceFolder}",
