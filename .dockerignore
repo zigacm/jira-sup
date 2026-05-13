@@ -1,0 +1,12 @@
+.git
+.venv
+.pytest_cache
+__pycache__
+*.pyc
+.env
+.DS_Store
+how to use agent
+tests
+.vscode
+.github
+uv.lock

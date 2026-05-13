@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 .env
+.env.deploy
+jira-bot.zip
 .pytest_cache/
 dist/
 build/
