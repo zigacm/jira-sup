@@ -1,11 +1,11 @@
 ---
-name: jira-agent-connect
+name: jira-agent
 description: 'Connect to Jira server and switch to Agent mode. Use when you want to start working with Jira tickets, search issues, or manage projects in a single step.'
 argument-hint: 'Optional issue key (e.g., CGG-256) to jump directly to after connecting'
 user-invocable: true
 ---
 
-# Jira Agent Connect
+# Jira Agent
 
 One-command Jira server startup + Agent mode switch.
 
@@ -22,7 +22,7 @@ One-command Jira server startup + Agent mode switch.
 
 ## Quick Start
 
-1. **Run this skill** (`/jira-agent-connect`)
+1. **Run this skill** (`/jira-agent`)
 2. **Switch mode**: Copilot Chat dropdown → **Agent**
 3. **Talk to it**: 
    - "show me my open tickets"
